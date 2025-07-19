@@ -3,7 +3,7 @@ const axios = require('axios');
 const router = express.Router();
 const Recipe = require('../models/Recipe');
 
-const SPOONACULAR_API_KEY = '00d1c5c8a48542fe83b40c4087c00520';
+const SPOONACULAR_API_KEY = process.env.UPI_KEY;
 
 /**
  * @route POST /api/recipes/suggest
